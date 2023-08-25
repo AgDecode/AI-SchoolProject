@@ -1,0 +1,15 @@
+Training :
+
+x_train = np_encode_inputs[:200]
+y_train = np_encode_outputs[:200]
+
+x_test = np_encode_inputs[200:401]
+y_test = np_encode_outputs[200:401]
+
+(Выборка - 400 примеров на тренеровку)
+------------------------------------------------
+
+Real_sample:
+real_dataset = dataset[400:501]
+
+(Выборка - 100 примеров на рельную проверку)

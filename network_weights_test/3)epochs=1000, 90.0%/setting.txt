@@ -1,0 +1,11 @@
+model_setting :
+
+model.add(Dense(16, input_dim=3, activation='relu'))
+model.add(Dense(12, activation='relu'))
+model.add(Dense(6, activation='softmax'))
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+history = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=1000, batch_size=64)
+
+----------------------------------------------------
+percentage_of_correct: 90.0%
+
